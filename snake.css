@@ -1,0 +1,8 @@
+body {
+    font-family: 'comic-sans';
+    text-align: center;
+    background-color: darkslategrey;
+    color: wheat;
+    transform: translate(0%, 15%)
+
+}
