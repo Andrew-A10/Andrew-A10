@@ -1,4 +1,4 @@
-
+var Score = 0;
 //board
 var blockSize = 25;
 var rows = 20;
@@ -34,6 +34,7 @@ function update() {
     if (gameOver) {
         return;
     }
+    
     //board
     context.fillStyle="black";
     context.fillRect(0, 0, board.width, board.height);
@@ -43,8 +44,8 @@ function update() {
     //snake
     if (snakeX == foodX && snakeY == foodY) {
         snakeBody.push([foodX, foodY])
-        placeFood();
         Score = Score + 1;
+        placeFood();
     }
     for (let i = snakeBody.length - 1; i > 0; i--) {
         snakeBody[i] = snakeBody[i-1];
@@ -73,6 +74,7 @@ function update() {
             alert("Game Over");
         }
     }
+    document.getElementById("ScoreTextBox").innerHTML = Score;
 }
 
 //randomizing food and player spawns
