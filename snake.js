@@ -19,7 +19,6 @@ var foodX;
 var foodY;
 
 var gameOver = false;
-
 window.onload = function() {
     board = document.getElementById("board");
     board.height = rows * blockSize;
@@ -29,6 +28,9 @@ window.onload = function() {
     placeFood();
     document.addEventListener("keyup", changeDirection);
     setInterval(update, 1000/10); //100 ms
+}
+function Restart() {
+    window.location.reload(true);
 }
 function update() {
     if (gameOver) {
@@ -74,7 +76,7 @@ function update() {
             alert("Game Over");
         }
     }
-    document.getElementById("ScoreTextBox").innerHTML = Score;
+    document.getElementById("ScoreTextBox").innerHTML = "Score: " + Score;
 }
 
 //randomizing food and player spawns
@@ -102,6 +104,22 @@ function changeDirection(e) {
         velocityY = 0;
     }
     else if (e.code == "ArrowRight" && velocityX != -1) {
+        velocityX = 1;
+        velocityY = 0;
+    }
+    else if (e.key == "w" && velocityY != 1) {
+        velocityX = 0;
+        velocityY = -1;
+    }
+    else if (e.key == "s" && velocityY != -1) {
+        velocityX = 0;
+        velocityY = 1;
+    }
+    else if (e.key == "a" && velocityX != 1) {
+        velocityX = -1;
+        velocityY = 0;
+    }
+    else if (e.key == "d" && velocityX != -1) {
         velocityX = 1;
         velocityY = 0;
     }

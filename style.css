@@ -1,26 +1,67 @@
-body{
+body {
     background: darkslategrey;
     text-align: center;
     position: absolute;
-    top: 0%;
-    left: 45%;
-    transform: translate (-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: wheat;
-}
-button{
-    padding: 10px 20px;
-    font-size: 20px;
-    background: lightgrey;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
+
 }
 
-ul#Navigation .active{
+ul#Navigation .active {
     border-color: wheat;
-    border-left-color: black; 
+    border-left-color: black;
     border-top-color: black;
-    color: wheat; 
+    color: wheat;
     background-color: darkslategray;
+}
+
+button {
+    background-color: wheat;
+    color: darkslategrey;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: 2px solid darkslategrey;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: darkslategrey;
+    border-color: wheat;
+    color: wheat;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+button:active {
+    background-color: wheat;
+    color: darkslategrey;
+    transform: scale(1);
+    box-shadow: none;
+
+}
+
+button:focus {
+    outline: none;
+    border-color: wheat;
+
+}
+a {
+    color: wheat;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: darkslategrey;
+}
+a:hover {
+    color: wheat;
 }
