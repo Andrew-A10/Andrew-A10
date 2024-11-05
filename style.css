@@ -53,15 +53,11 @@ button:focus {
     border-color: wheat;
 
 }
-a {
-    color: wheat;
-    text-decoration: none;
+.coolbutton:hover {
+    background-image: url("Stars.gif");
 }
-
-
-a:visited {
-    color: darkslategrey;
-}
-a:hover {
-    color: wheat;
+.gamebutton:hover {
+    background-image: url("mario.gif");
+    background-size: 85%;
+    background-position: 240px 100px;
 }

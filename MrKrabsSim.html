@@ -10,7 +10,6 @@
     <h4>
     Click the button to make money.
     </h4>
-</button>
 <style>
 .button {
   border: none;
@@ -29,15 +28,19 @@
   background-color: white; 
   color: black; 
   border: 2px solid #04AA6D;
+  margin-left: 10px;
+  margin-right: 10px;
+  
 }
 
 .button1:hover {
   background-color: #04AA6D;
   color: white;
+  border-color: white;
 }
 </style>
 
-<button class="button button1" onclick="countClicks()">$</button>
+<button class="button button1" onclick="countClicks()">&nbsp&nbsp&nbsp&nbsp&nbsp$&nbsp&nbsp&nbsp&nbsp&nbsp</button>
 <p>You Have: <span id="clickCount">0</span>$</p>
  <button onclick="hireChef()">Hire Chef [<span id="chefCost">15</span>] -- <span id="chefs">0</span></button>
 <p> </p>

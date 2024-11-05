@@ -3,8 +3,19 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <h1>Main</h1>
-    <button><a href="website.html"class="active">The juicy stuff</a></button><br>
-    <button><a href="games.html" class="active">Games (In Progress)</a></button><br>
-    <button><a href="contact.html" class="active">Contact</a></button>
+    <button onclick="redi1();" class="coolbutton">The juicy stuff</button><br>
+    <button onclick="redi2();" class="gamebutton">Games (In Progress)</button><br>
+    <button onclick="redi3();">Contact</button>
     </head>
+<script>
+    function redi1() {
+        window.location.href = "website.html";
+    }
+    function redi2() {
+        window.location.href = "games.html";
+    }
+    function redi3() {
+        window.location.href = "contact.html";
+    }
+</script>
 </html>
