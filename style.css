@@ -2,11 +2,10 @@ body {
     background: darkslategrey;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 45%;
     color: wheat;
-
+    
 }
 
 ul#Navigation .active {
@@ -54,10 +53,10 @@ button:focus {
 
 }
 .coolbutton:hover {
-    background-image: url("Stars.gif");
+    background-image: url("Gif's/Stars.gif");
 }
 .gamebutton:hover {
-    background-image: url("mario.gif");
+    background-image: url("Gif's/mario.gif");
     background-size: 85%;
     background-position: 240px 100px;
 }

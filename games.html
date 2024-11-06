@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+    <head name="viewport" content="width=device-width, initial-slace=1.0">
         <h1>Games</h1>
-    </head>
-    <ul id="Navigation">
-        <li><a href="MrKrabsSim.html"class="active">Mr Krabs Sim</a></li>
-        <li><a href="snake.html" class="active">Snake</a></li>
-        <li><a href="index.html" class="active">Main</a></li>
-    </ul>
+    </head><br>
+    <div class="button-container">
+        <button onclick="redi1();" class="mrksb">Mr Krabs Sim</button><br>
+        <button onclick="redi2();" class="sb">Snake</button><br>
+        <button onclick="redi3();" class="mb">Main</button>
+    </div>
+    <script>
+        function redi1() {
+            window.location.href = "MrKrabsSim.html";
+        }
+        function redi2() {
+            window.location.href = "Snake.html";
+        }
+        function redi3() {
+            window.location.href = "index.html";
+        }
+    </script>
+    <style>
 
+        body {
+            background: darkslategrey;
+            text-align: center;
+            position: absolute;
+            top: 0%;
+            left: 20%;
+            color: wheat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            margin: 0px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap:40px;
+        }
+        button {
+            background-color: wheat;
+            color: darkslategrey;
+            font-size: 32px;
+            padding: 48px 96px;
+            border: 8px solid darkslategrey;
+            border-radius: 32px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: darkslategrey;
+            border-color: wheat;
+            color: wheat;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            background-color: wheat;
+            color: darkslategrey;
+            transform: scale(1);
+            box-shadow: none;
+
+        }
+
+        button:focus {
+            outline: none;
+            border-color: wheat;
+
+        }
+        .mrksb:hover {
+            background-image: url("Gif's/mrkrabs.gif");
+            background-size: 430px 133px;
+            text-shadow: -1px -1px black;
+        }
+        .sb:hover {
+            background-image: url("Gif's/snake.gif");
+            background-size: 304px 160px;
+        }
+    </style>
 </html>
