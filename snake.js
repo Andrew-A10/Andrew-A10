@@ -1,12 +1,12 @@
 var Score = 0;
-//board
+//!board
 var blockSize = 25;
 var rows = 20;
 var cols = 20;
 var board;
 var context;
 
-//snake
+//!snake
 var snakeX;
 var snakeY;
 
@@ -14,7 +14,7 @@ var velocityX = 0;
 var velocityY = 0;
 
 var snakeBody = [];
-//food
+//!food
 var foodX;
 var foodY;
 
@@ -37,13 +37,13 @@ function update() {
         return;
     }
     
-    //board
+    //!board
     context.fillStyle="black";
     context.fillRect(0, 0, board.width, board.height);
-    //food
+    //!food
     context.fillStyle="red";
     context.fillRect(foodX, foodY, blockSize, blockSize);
-    //snake
+    //!snake
     if (snakeX == foodX && snakeY == foodY) {
         snakeBody.push([foodX, foodY])
         Score = Score + 1;
@@ -65,7 +65,7 @@ function update() {
 
 
 
-    //game over conditions
+    //!game over conditions
     if (snakeX < 0 || snakeX > cols * blockSize - 1 || snakeY < 0 || snakeY > rows * blockSize - 1) {
         gameOver = true;
         alert("Game Over");
@@ -79,7 +79,7 @@ function update() {
     document.getElementById("ScoreTextBox").innerHTML = "Score: " + Score;
 }
 
-//randomizing food and player spawns
+//!randomizing food and player spawns
 function placeFood() {
     foodX = Math.floor(Math.random() * cols) * blockSize;
     foodY = Math.floor(Math.random() * cols) * blockSize;
@@ -89,7 +89,7 @@ function spawnPlayer() {
     snakeY = Math.floor(Math.random() * cols) * blockSize;
 }
 
-//movement
+//!movement
 function changeDirection(e) {
     if (e.code == "ArrowUp" && velocityY != 1) {
         velocityX = 0;
