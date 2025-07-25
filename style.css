@@ -8,6 +8,10 @@ body {
     
 }
 
+    p {
+    text-indent: 50px;
+}
+
 ul#Navigation .active {
     border-color: wheat;
     border-left-color: black;
@@ -51,12 +55,4 @@ button:focus {
     outline: none;
     border-color: wheat;
 
-}
-.coolbutton:hover {
-    background-image: url("Gif's/Stars.gif");
-}
-.gamebutton:hover {
-    background-image: url("Gif's/mario.gif");
-    background-size: 85%;
-    background-position: 240px 100px;
 }

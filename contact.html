@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head name="viewport" content="width=device-width, initial-slace=1.0">
- <link rel="stylesheet" type="text/css" href="style.css" />
     <h1>Contact</h1>
 </head>
 
-<p>School Email: andrew.armstrong@malad.us</p>
+<p>Business Email: Vernon.Armstrong5@gmail.com</p>
 <button onclick="redirect();">Main</button>
 <script>
     function redirect() {
         window.location.href="index.html";
     }
 </script>
+<style>
+    p {
+    text-indent: 50px;
+}
+    body {
+    background: darkslategrey;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 38%;
+    color: wheat;
+    
+}
+
+ul#Navigation .active {
+    border-color: wheat;
+    border-left-color: black;
+    border-top-color: black;
+    color: wheat;
+    background-color: darkslategray;
+}
+
+button {
+    background-color: wheat;
+    color: darkslategrey;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: 2px solid darkslategrey;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: darkslategrey;
+    border-color: wheat;
+    color: wheat;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+button:active {
+    background-color: wheat;
+    color: darkslategrey;
+    transform: scale(1);
+    box-shadow: none;
+
+}
+
+button:focus {
+    outline: none;
+    border-color: wheat;
+
+}
+</style>
+</html>
+
 </html>
